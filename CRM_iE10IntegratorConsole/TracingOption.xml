@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.2" serie="MM" folio="00021046" fecha="2017-10-19T18:07:45" sello="On5vjVDA1Qxw/Au/YPaBnsLYP+3FjcEKlie34XpzGFJpfBsCA3dPeeHRjXyyCc8HVa3GyvUDAmKyVzqlsgvxxI0LhPkC5s/Qz9GDCgS65XjUV1fgE9Dr7ysJLi58Gg6WY9yvwCprKjxaSpq9B07yAmaNAqpWMgvzLH5+dbUwxOo=" formaDePago="PAGO EN UNA SOLA EXHIBICION" noCertificado="00001000000301688135" certificado="MIIEfjCCA2agAwIBAgIUMDAwMDEwMDAwMDAzMDE2ODgxMzUwDQYJKoZIhvcNAQEFBQAwggGKMTgwNgYDVQQDDC9BLkMuIGRlbCBTZXJ2aWNpbyBkZSBBZG1pbmlzdHJhY2nDs24gVHJpYnV0YXJpYTEvMC0GA1UECgwmU2VydmljaW8gZGUgQWRtaW5pc3RyYWNpw7NuIFRyaWJ1dGFyaWExODA2BgNVBAsML0FkbWluaXN0cmFjacOzbiBkZSBTZWd1cmlkYWQgZGUgbGEgSW5mb3JtYWNpw7NuMR8wHQYJKoZIhvcNAQkBFhBhY29kc0BzYXQuZ29iLm14MSYwJAYDVQQJDB1Bdi4gSGlkYWxnbyA3NywgQ29sLiBHdWVycmVybzEOMAwGA1UEEQwFMDYzMDAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBEaXN0cml0byBGZWRlcmFsMRQwEgYDVQQHDAtDdWF1aHTDqW1vYzEVMBMGA1UELRMMU0FUOTcwNzAxTk4zMTUwMwYJKoZIhvcNAQkCDCZSZXNwb25zYWJsZTogQ2xhdWRpYSBDb3ZhcnJ1YmlhcyBPY2hvYTAeFw0xMzEyMTExNTEyNThaFw0xNzEyMTExNTEyNThaMIHKMSEwHwYDVQQDExhUUklTQSBDT01FUkNJQUwgU0EgREUgQ1YxITAfBgNVBCkTGFRSSVNBIENPTUVSQ0lBTCBTQSBERSBDVjEhMB8GA1UEChMYVFJJU0EgQ09NRVJDSUFMIFNBIERFIENWMSUwIwYDVQQtExxUQ085MDA3MjM1RjYgLyBHVUdKNTcwMTAxTlBBMR4wHAYDVQQFExUgLyBHVUdKNTcwMTAxSE5MUlRWMDQxGDAWBgNVBAsTD1RSSVNBIENPTUVSQ0lBTDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAin0u2PcmJQfYy4Ef4NpeJ9qJndtaiYyzsiEqW8fZY9Fywx/uHU1be+LW41wD7pcnCK/w22pjT4vBuP7jIxA59y2lLbNy/TITXVQoenRJfXAbef/I3vfDDA2WwyPSvfoi3GjSi4kohI94ePPnsN1LZHiUj+X1HZbNKmam68g+en0CAwEAAaMdMBswDAYDVR0TAQH/BAIwADALBgNVHQ8EBAMCBsAwDQYJKoZIhvcNAQEFBQADggEBAA5PJe4IhZHa0iho6DEnaZXexiNcFbOjWUX+tP/LP0pQ06YDSpetdMYMaQWP30s3pPGPCCfavKeF5TNVu/3D5X11YkyOSjTgx7nZU/ffa54jslORJbbnhAzc+bypQFXJ6syHuibK+DcdO63/FZCxXugOQrysAYcW3wnVTIJMNUxeUr/LkvzighJJac2VyayNYRVFx1DBHNdMTpSb0q1PAeGmsqvMzmQdTT82nnv7LVbY9UNTHfW74OqRHWKRS8r5ormn0ZnPy0BbuMdHXer7t91vAvCaUAU5+FDfkh+5ne6YpzDFL3cjdPli03Ni8WlDmy2kZtDveABKs4X2NQSH+KU=" condicionesDePago="30 días" subTotal="5298.73" total="6003.43" metodoDePago="03" tipoDeComprobante="ingreso" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv32.xsd" LugarExpedicion="Santa Catarina" TipoCambio="1.0" Moneda="MXN" xmlns:cfdi="http://www.sat.gob.mx/cfd/3">
+  <cfdi:Emisor rfc="TCO9007235F6" nombre="Trisa Comercial, S.A. de C.V.">
+    <cfdi:DomicilioFiscal calle="Juanita Llaguno Col. La Concordia" noExterior="No. 119" localidad="Santa Catarina" municipio="Santa Catarina" estado="Nuevo León" pais="Mexico" codigoPostal="66168" />
+    <cfdi:ExpedidoEn calle="Calle Norte 4, Ciudad Industrial" noExterior="No. 10" localidad="H. Matamoros" municipio="Matamoros" estado="Tamaulipas" pais="Mexico" codigoPostal="87490" />
+    <cfdi:RegimenFiscal Regimen="PERSONAS MORALES" />
+  </cfdi:Emisor>
+  <cfdi:Receptor rfc="EMP020708RH5" nombre="EMPACOMERCIO S.A DE C.V">
+    <cfdi:Domicilio calle="BAHIA DE SANTA BARBARA 152" noExterior="VERONICA ANZURES" localidad="DISTRITO FEDERAL" municipio="H.MATAMOROS" estado="DISTRITO FEDERAL" pais="Mexico" codigoPostal="11300" />
+  </cfdi:Receptor>
+  <cfdi:Conceptos>
+    <cfdi:Concepto cantidad="1.0" unidad="SERV" descripcion="Traslado de Tolva de 30 mts en Unidad Roll Off Federal" valorUnitario="3577.5" importe="3577.5" />
+    <cfdi:Concepto cantidad="7.06" unidad="TON" descripcion="Cuota por Disposicion de Residuos" valorUnitario="243.8" importe="1721.23" />
+  </cfdi:Conceptos>
+  <cfdi:Impuestos totalImpuestosRetenidos="143.1" totalImpuestosTrasladados="847.8">
+    <cfdi:Retenciones>
+      <cfdi:Retencion impuesto="IVA" importe="143.1" />
+    </cfdi:Retenciones>
+    <cfdi:Traslados>
+      <cfdi:Traslado impuesto="IVA" tasa="16.0" importe="572.4" />
+      <cfdi:Traslado impuesto="IVA" tasa="16.0" importe="275.4" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+</cfdi:Comprobante>

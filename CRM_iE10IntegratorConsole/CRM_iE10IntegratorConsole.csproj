@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A059A845-18B4-45E1-9D17-E740A90B8336}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CRM_iE10IntegratorConsole</RootNamespace>
+    <AssemblyName>CRM_iE10IntegratorConsole</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Epicor.App.Version, Version=10.1.500.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External Dlls\Epicor.App.Version.dll</HintPath>
+    </Reference>
+    <Reference Include="Epicor.Ice.Version, Version=3.1.500.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External Dlls\Epicor.Ice.Version.dll</HintPath>
+    </Reference>
+    <Reference Include="Epicor.ServiceModel, Version=3.1.500.0, Culture=neutral, PublicKeyToken=37a5ccb872c00aec, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External Dlls\Epicor.ServiceModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Erp.Adapters.CustCnt, Version=10.1.500.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External Dlls\Erp.Adapters.CustCnt.dll</HintPath>
+    </Reference>
+    <Reference Include="Erp.Adapters.CustGrup, Version=10.1.500.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External Dlls\Erp.Adapters.CustGrup.dll</HintPath>
+    </Reference>
+    <Reference Include="Erp.Adapters.Customer, Version=10.1.500.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External Dlls\Erp.Adapters.Customer.dll</HintPath>
+    </Reference>
+    <Reference Include="Erp.Adapters.PerCon, Version=10.1.500.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External Dlls\Erp.Adapters.PerCon.dll</HintPath>
+    </Reference>
+    <Reference Include="Erp.Adapters.Quote, Version=10.1.400.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External Dlls\Erp.Adapters.Quote.dll</HintPath>
+    </Reference>
+    <Reference Include="Erp.Adapters.Terms">
+      <HintPath>External Dlls\Erp.Adapters.Terms.dll</HintPath>
+    </Reference>
+    <Reference Include="Erp.Common.ContractInterfaces">
+      <HintPath>External Dlls\Erp.Common.ContractInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Erp.Contracts.BO.CustCnt, Version=10.1.500.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External Dlls\Erp.Contracts.BO.CustCnt.dll</HintPath>
+    </Reference>
+    <Reference Include="Erp.Contracts.BO.CustGrup, Version=10.1.500.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External Dlls\Erp.Contracts.BO.CustGrup.dll</HintPath>
+    </Reference>
+    <Reference Include="Erp.Contracts.BO.Customer, Version=10.1.500.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External Dlls\Erp.Contracts.BO.Customer.dll</HintPath>
+    </Reference>
+    <Reference Include="Erp.Contracts.BO.PerCon, Version=10.1.500.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External Dlls\Erp.Contracts.BO.PerCon.dll</HintPath>
+    </Reference>
+    <Reference Include="Erp.Contracts.BO.Quote, Version=10.1.400.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External Dlls\Erp.Contracts.BO.Quote.dll</HintPath>
+    </Reference>
+    <Reference Include="Erp.Contracts.BO.Terms">
+      <HintPath>External Dlls\Erp.Contracts.BO.Terms.dll</HintPath>
+    </Reference>
+    <Reference Include="Ice.Adapters.UD01, Version=3.1.500.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External Dlls\Ice.Adapters.UD01.dll</HintPath>
+    </Reference>
+    <Reference Include="Ice.Contracts.BO.UD01, Version=3.1.500.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External Dlls\Ice.Contracts.BO.UD01.dll</HintPath>
+    </Reference>
+    <Reference Include="Ice.Contracts.BO.UserFile, Version=3.1.500.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External Dlls\Ice.Contracts.BO.UserFile.dll</HintPath>
+    </Reference>
+    <Reference Include="Ice.Contracts.BO.UserTracing, Version=3.1.500.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External Dlls\Ice.Contracts.BO.UserTracing.dll</HintPath>
+    </Reference>
+    <Reference Include="Ice.Contracts.Lib.BOReader, Version=3.1.500.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External Dlls\Ice.Contracts.Lib.BOReader.dll</HintPath>
+    </Reference>
+    <Reference Include="Ice.Contracts.Lib.SessionMod, Version=3.1.500.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External Dlls\Ice.Contracts.Lib.SessionMod.dll</HintPath>
+    </Reference>
+    <Reference Include="Ice.Core.Session, Version=3.1.500.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External Dlls\Ice.Core.Session.dll</HintPath>
+    </Reference>
+    <Reference Include="Ice.Lib.AppSettingsHandler, Version=3.1.500.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External Dlls\Ice.Lib.AppSettingsHandler.dll</HintPath>
+    </Reference>
+    <Reference Include="Ice.Lib.Cryptography, Version=3.1.500.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External Dlls\Ice.Lib.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Ice.Lib.Deployment, Version=3.1.500.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External Dlls\Ice.Lib.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="LAVHGenericMethods, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External Dlls\LAVHGenericMethods.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Crm.Sdk.Proxy">
+      <HintPath>External Dlls\Microsoft.Crm.Sdk.Proxy.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory">
+      <HintPath>External Dlls\Microsoft.IdentityModel.Clients.ActiveDirectory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms">
+      <HintPath>External Dlls\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xrm.Sdk">
+      <HintPath>External Dlls\Microsoft.Xrm.Sdk.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xrm.Sdk.Deployment">
+      <HintPath>External Dlls\Microsoft.Xrm.Sdk.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xrm.Tooling.Connector">
+      <HintPath>External Dlls\Microsoft.Xrm.Tooling.Connector.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EpicorSps\spCRMGetOps.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EpicorSps\spGetContacOps.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EpicorSps\spGetCRMContactOps.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EpicorSps\spGetCRMProcessedOps.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EpicorSps\spGetE101CustGrpOps.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EpicorSps\spGetE101Orders.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EpicorSps\spGetE101QuoteOps.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EpicorSps\spGetCRMTermsOps.sql" />
+    <Content Include="EpicorSps\spGetE101TermsOps.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EpicorSps\spGetOps.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EpicorSps\spGetQuoteOps.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EpicorSps\spSetContactOPSuccess.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EpicorSps\spSetCrmSuccess.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EpicorSps\spSetQuoteOPSuccess.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EpicorSps\spUpdOps.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EpicorSps\updCRMQuoteOps.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="External Dlls\Epicor.App.Version.dll" />
+    <Content Include="External Dlls\Epicor.Ice.Version.dll" />
+    <Content Include="External Dlls\Epicor.ServiceModel.dll" />
+    <Content Include="External Dlls\Erp.Adapters.CustCnt.dll" />
+    <Content Include="External Dlls\Erp.Adapters.CustGrup.dll" />
+    <Content Include="External Dlls\Erp.Adapters.Customer.dll" />
+    <Content Include="External Dlls\Erp.Adapters.PerCon.dll" />
+    <Content Include="External Dlls\Erp.Adapters.Quote.dll" />
+    <Content Include="External Dlls\Erp.Contracts.BO.CustCnt.dll" />
+    <Content Include="External Dlls\Erp.Contracts.BO.CustGrup.dll" />
+    <Content Include="External Dlls\Erp.Contracts.BO.Customer.dll" />
+    <Content Include="External Dlls\Erp.Contracts.BO.PerCon.dll" />
+    <Content Include="External Dlls\Erp.Contracts.BO.Quote.dll" />
+    <Content Include="External Dlls\Ice.Adapters.UD01.dll" />
+    <Content Include="External Dlls\Ice.Contracts.BO.UD01.dll" />
+    <Content Include="External Dlls\Ice.Contracts.BO.UserFile.dll" />
+    <Content Include="External Dlls\Ice.Contracts.BO.UserTracing.dll" />
+    <Content Include="External Dlls\Ice.Contracts.Lib.BOReader.dll" />
+    <Content Include="External Dlls\Ice.Contracts.Lib.SessionMod.dll" />
+    <Content Include="External Dlls\Ice.Core.Session.dll" />
+    <Content Include="External Dlls\Ice.Lib.AppSettingsHandler.dll" />
+    <Content Include="External Dlls\Ice.Lib.Cryptography.dll" />
+    <Content Include="External Dlls\Ice.Lib.Deployment.dll" />
+    <Content Include="External Dlls\LAVHGenericMethods.dll" />
+    <Content Include="TracingOption.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
